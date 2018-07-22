@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Github Profile</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/generic.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/mediaQuery.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body onload="makeNone()" >
+
+	<div class="main mt-25">
+		<div class="wrapper">
+
+		    <!-- Left Panel Start -->
+
+			<div class="left-panel pl-10 pr-15">
+
+                <a class="block" href="#"><img class="block" id="img" width="230" height="230"></a>
+
+			    <div class="user-container pt-15 pb-15">
+					<h1>
+						<span class="block" id="user-name"></span>    
+						<span class="block" id="user-id"></span>
+					</h1>
+				</div>
+
+				<div class="user-profile-container pb-15">
+					<span class="block" id="user-profile"></span>
+				</div>
+
+				<div class="edit-bio-container pb-20">
+					<span class="btn-edit-bio block">Edit bio</span>
+				</div>
+
+				<div class="user-detail-container pt-25">
+					<ul id="user-detail-list">
+					
+					</ul>
+				</div>
+			</div>
+            
+            <!--  Left Panel End  -->
+			<!--  Right Panel Start  -->
+
+			<div class="right-panel pl-15 pr-15">
+
+				<!--  Navigation  -->
+
+				<div class="nav">
+					<ul class="nav-container">
+						<li id="overview"><a href="#">Overview</a></li>
+						<li id="repositories" class="selected"><a href="#">Repositories<span id="repositoriesCounter" class="counter"></span></a></li>
+						<li id="stars"><a href="#">Stars<span id="starsCounter" class="counter"></span></a></li>
+						<li id="followers"><a href="#">Followers<span id="followersCounter" class="counter"></span></a></li>
+						<li id="following"><a href="#">Following<span id="followingCounter" class="counter"></span></a></li>
+					</ul>
+				</div>
+
+				<!--  End of Navigation -->
+				<!--  Form Start  -->
+				
+				<div class="input-container pt-15 pb-15">
+					<form class="search-container">
+					<div class="search pr-20">
+					 <input id="input" type="text" placeholder="Search repositories...">
+					</div>
+					
+					<div class="allbutton">
+					<div class="btnContainer inline-block">
+
+				   <button type="button" class="mainbutton" onclick="toggle(this,'typeOption',false)">
+					<i>Type: </i>
+					<span>All</span>
+					<span><i class="fas fa-sort-down pl-5 down"></i></span>
+					</button>
+
+					
+					<div id="typeOption" class="option none">
+					<button type="button" >Select type:<span class="cross" onclick="hide('typeOption')">x</span></button>
+					<button type="button" value="All" onclick="select1(this)"><i class="fas fa-check"></i>All</button>
+					<button type="button" value="Sources" onclick="select1(this)"><i class="fas fa-check"></i>Sources</button>
+					<button type="button" value="Forks" onclick="select1(this)"><i class="fas fa-check"></i>Forks</button>
+					<button type="button" value="Archived" onclick="select1(this)"><i class="fas fa-check"></i>Archived</button>
+					<button type="button" value="Mirrors" onclick="select1(this)"><i class="fas fa-check "></i>Mirrors</button>
+					</div>
+					
+
+					</div> 
+
+					<div class="btnContainer inline-block">
+
+					<button type="button" class="mainbutton" onclick="toggle(this,'languageOption',false)">
+					<i>Language: </i>
+					<span>All</span>
+					<span><i class="fas fa-sort-down pl-5 down"></i></span>
+					</button>
+
+					
+					<div id="languageOption" class="option none">
+					<button type="button">Select language:<span class="cross" onclick="hide('languageOption')">x</span></button>
+					<button type="button" value="All" onclick="select2(this)"><i class="fas fa-check"></i>All</button>
+					<button type="button" value="CSS" onclick="select2(this)"><i class="fas fa-check"></i>CSS</button>
+					<button type="button" value="JavaScript" onclick="select2(this)"><i class="fas fa-check"></i>JavaScript</button>
+					</div>
+				
+
+					</div>
+
+					<div class="inline-block pl-15"><button class="new" type="button"><i class="far fa-sticky-note pr-5" style="color: #fff"></i>New</button></div>
+                    </div>
+					</form>
+				</div>
+
+				<!--  Form End  -->
+				<!--  Repositories Container Start   -->
+
+				<div id="fetch-repos" class="repositories-block">
+					
+				</div>
+
+				<!--  Repositories Container End  -->
+			
+			</div>
+
+			<!--  Right Panel End  -->
+
+			<div style="clear: both;"></div>
+
+		</div>
+	</div>
+	<script type="text/javascript" src="javascript/script.js" ></script>
+	<script type="text/javascript" src="javascript/search.js"></script>
+</body>
+</html>

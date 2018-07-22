@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    overflow-y: scroll;
+}
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #586069;
+    word-wrap: break-word;
+}
+.main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px
+}
+
+/*  Start of left panel style  */
+
+.main .left-panel{
+    width: 25%;
+    float: left;
+}
+.main .left-panel a img{
+    border-radius: 5px;
+}
+.main .left-panel .user-container #user-name{
+    line-height: 30px;
+    font-size: 26px;
+    color: #24292e;
+}
+.main .left-panel .user-container #user-id{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    color: #666;
+}
+.main .left-panel .user-profile-container #user-profile{
+    color: #666;
+}
+.main .left-panel .edit-bio-container{
+    border-bottom: 1px solid #edeef1;
+}
+.main .left-panel .edit-bio-container .btn-edit-bio{
+    text-align: center;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 6px 12px;
+    vertical-align: middle;
+    width: 100%;
+    font-size: 14px;
+    color: #24292e;
+    border: 1px solid rgba(27,31,35,0.2);
+    background: #f4f6f9;
+    min-height: 34px;
+    background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.main .left-panel .edit-bio-container .btn-edit-bio:hover{
+    background-color: #e6ebf1;
+    background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
+    background-position: -.5em;
+    border-color: rgba(27,31,35,0.35);
+
+}
+.main .left-panel .user-detail-container #user-detail-list li{
+   line-height: 22px;
+}
+.main .left-panel .user-detail-container #user-detail-list .corporation ,.country{
+    font-weight: 400;
+    color: #24292e;
+    font-size: 14px;
+    line-height: 2;
+}
+.main .left-panel .user-detail-container #user-detail-list .email-id a{
+    color: #0366d6;
+}
+
+/*  End of left panel style */
+
+/*  Start of right panel style*/
+
+
+.main .right-panel{
+    width: 75%;
+    float: right;
+}
+.main .right-panel .nav .nav-container{
+        border-bottom: 1px solid #d1d5da;
+}
+.main .right-panel .nav .nav-container li{
+    padding: 16px 8px;
+    margin-right: 8px;
+    font-size: 16px;
+    display: inline-block;
+    text-align:  center;
+    border-bottom: 2px solid transparent;
+    color: #586069;
+   
+}
+.main .right-panel .nav .nav-container li:hover{
+    color: #24292e;
+    text-decoration: none;
+    border-bottom:2px solid #d1d5da;;
+    transition: 0.2s ease;
+}
+.main .right-panel .nav .nav-container li a{
+color: inherit;
+font-size: 14px;
+line-height: 1.5;
+}
+.main .right-panel .nav .nav-container li a .counter{
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: #586069;
+    background-color: rgba(27,31,35,0.08);
+    border-radius: 20px;
+    margin-left: 2px;
+}
+.main .right-panel .input-container{
+    border-bottom: 1px solid #d1d5da;
+}
+.main .right-panel .input-container .search-container{
+    display: table;
+}
+.main .right-panel .input-container .search-container .search{
+    display: table-cell;
+    white-space: nowrap;
+    width: 99%;
+
+}
+.main .right-panel .input-container .search-container .allbutton{
+    display: table-cell;
+    white-space: nowrap;
+    width: 1%;
+}
+.main .right-panel .input-container .search-container .search{
+    width: 55%;
+}
+.main .right-panel .input-container .search-container #input{
+    width: 100%;
+    min-height: 34px;
+    padding: 6px 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #24292e;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,0.075)
+}
+.main .right-panel .input-container .search-container .btnContainer{
+   position: relative; 
+}
+.main .right-panel .input-container .mainbutton{
+    padding:6px 12px;
+    min-height: 34px;
+    border-radius: 3px;
+    border: 1px solid rgba(27,31,35,0.2);
+    background: #f4f6f9;
+    background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+    line-height: 20px;
+    vertical-align:middle;
+    color: #24292e;
+    font-weight: 600;
+    font-family: inherit;   
+    
+}
+.main .right-panel .input-container .mainbutton:focus{
+    outline: none;
+}
+.main .right-panel .input-container .mainbutton.active{
+     background-color: #e9ecef;
+    background-image: none;
+    border-color: rgba(27,31,35,0.35);
+    box-shadow: inset 0 0.15em 0.3em rgba(27,31,35,0.15);
+
+}
+.main .right-panel .input-container .mainbutton:hover{
+    background-color: #e6ebf1;
+    background-image: linear-gradient(-180deg, #f0f3f6 0%, #e6ebf1 90%);
+    background-position: -.5em;
+    border-color: rgba(27,31,35,0.35);
+}
+.main .right-panel .input-container .mainbutton i{
+    font-style: normal;
+    color: #24292e;
+    font-weight: bold;
+    opacity: 0.7;
+
+}
+.main .right-panel .input-container .mainbutton span{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+
+}
+.main .right-panel .input-container .new{
+    background-color: #2bb44b;
+    color: #fff ;
+    background-image:none;
+    padding:6px 12px;
+    min-height: 34px;
+    border-radius: 3px;
+    border: 1px solid rgba(27,31,35,0.2);
+    line-height: 20px;
+    vertical-align:middle;
+    font-weight: 600;
+    font-family: inherit;
+}
+.main .right-panel .input-container .new:hover{
+    background-image: linear-gradient(-180deg, #10ce3c 0%, #2bb44b 90%);
+    background-position: -.5em;
+    border-color: rgba(27,31,35,0.35);
+
+}
+.main .right-panel .input-container .new:focus{
+    outline: none;
+}
+.main .right-panel .input-container  #typeOption,#languageOption{
+    position: absolute;
+    width: 300px;
+    right: 0;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-size: 12px;
+    color: #586069;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(27,31,35,0.15);
+    border-radius: 3px;
+    box-shadow: 0 3px 12px rgba(27,31,35,0.15);
+}
+
+.main .right-panel .input-container .option button{
+     width: 100%;
+    display: block;
+    padding: 8px 8px 8px 30px;
+    overflow: hidden;
+    color: #586069;;
+    font-size: 12px;
+    font-weight:400;
+    cursor: pointer;
+    border-bottom: 1px solid #eaecef;
+    text-align: left;
+    position: relative;
+    border-left: 0;
+    border-right: 0;
+    border-top:0;
+    background-color: #fff;
+    line-height: 1.5;
+    font-family: inherit;
+}
+.main .right-panel .input-container .option button:focus{
+    outline: none;
+}
+.main .right-panel .input-container .option button:hover{
+    color: #fff;
+    background-color: #0366d6;
+}
+.main .right-panel .input-container .option button:first-child{
+    padding: 8px 10px;
+    line-height: 16px;
+    background: #f6f8fa;
+    border-bottom: 1px solid #e1e4e8;
+    text-align: left;
+    font-weight: 600;
+    color: #24292e;
+     cursor: default;
+}
+.main .right-panel .input-container .option button:last-child{
+    border-bottom: none;
+}
+.main .right-panel .input-container .option button i{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.main .right-panel .repositories-block .repositories-block-container{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #edeef1;
+}
+.main .right-panel .repositories-block .repositories-block-container .rp-title{
+    padding-bottom: 5px;
+}
+.main .right-panel .repositories-block .repositories-block-container .rp-title a{
+    color: #0366d6;
+}
+.main .right-panel .repositories-block .repositories-block-container .rp-value{
+    padding-bottom: 10px;
+    display: block;
+    width: 60%;
+    font-size: 14px;
+    color: #586069;
+}
+.main .right-panel .repositories-block .repositories-block-container .rp-icon{
+    padding-top: 5px;
+}
+.main .right-panel .repositories-block .repositories-block-container .rp-icon .circle{
+    width: 12px;
+    height: 12px;
+    display:  inline-block;
+    border-radius: 50%;
+}
+.main .right-panel .repositories-block .repositories-block-container .rp-icon .rp-text{
+    font-size:  12px;
+    color: #586069;
+    margin-right: 16px;
+}
+.main .right-panel .repositories-block .repositories-block-container .rp-icon .rp-date{
+    font-size:  12px;
+    color: #586069;
+    margin-right: 16px;
+}
+.main .right-panel .repositories-block .repositories-block-container .rp-icon a{
+    font-size: 12px;
+    color: #586069;
+    margin-right: 16px;
+}
+
+
+
+

@@ -1,0 +1,46 @@
+/*  Media Queries  */
+
+@media screen and (max-width: 700px) {
+ .main{
+    max-width: 450px;
+ }
+ .main .left-panel{
+    width: 100%;
+    float: none;
+    text-align: center;
+}
+.main .left-panel a img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.main .left-panel .edit-bio-container .btn-edit-bio{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main .right-panel{
+    width: 100%;
+    float: none;
+}
+.main .right-panel .nav .nav-container{
+    display: flex;
+}
+.main .right-panel .nav .nav-container li{
+    line-height: 20px;
+}
+.main .right-panel .input-container .search-container .search{
+    width: 100%;
+    padding: 0;
+    padding-bottom: 10px;    
+}
+.main .right-panel .input-container .search-container{
+    display: block;
+}
+.main .right-panel .input-container .search-container .search{
+    display: block;
+}
+.main .right-panel .input-container  #typeOption,#languageOption{
+    left: 0;
+}
+
+}

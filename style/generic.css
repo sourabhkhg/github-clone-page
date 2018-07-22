@@ -1,0 +1,134 @@
+
+/*_______Margin and padding null_____*/
+.zero_mp{margin: 0;padding: 0}
+.zero_m{margin: 0;}
+.zero_p{padding: 0;}
+
+/* _________Margin__________*/
+
+.mt-5{margin-top: 5px;}
+.mt-10{margin-top: 10px;}
+.mt-15{margin-top: 15px;}
+.mt-20{margin-top: 20px;}
+.mt-25{margin-top: 25px;}
+.mt-30{margin-top: 30px;}
+
+.ml-5{margin-left: 5px;}
+.ml-10{margin-left: 10px;}
+.ml-15{margin-left: 15px;}
+.ml-20{margin-left: 20px;}
+.ml-25{margin-left: 25px;}
+.ml-30{margin-left: 30px;}
+
+.mr-5{margin-right: 5px;}
+.mr-10{margin-right: 10px;}
+.mr-15{margin-right: 15px;}
+.mr-20{margin-right: 20px;}
+.mr-25{margin-right: 25px;}
+.mr-30{margin-right: 30px;}
+
+.mb-5{margin-bottom: 5px;}
+.mb-10{margin-bottom: 10px;}
+.mb-15{margin-bottom: 15px;}
+.mb-20{margin-bottom: 20px;}
+.mb-25{margin-bottom: 25px;}
+.mb-30{margin-bottom: 30px;}
+
+/*________Padding___________*/
+
+.pt-5{padding-top: 5px;}
+.pt-10{padding-top: 10px;}
+.pt-15{padding-top: 15px;}
+.pt-20{padding-top: 20px;}
+.pt-25{padding-top: 25px;}
+.pt-30{padding-top: 30px;}
+
+.pl-5{padding-left: 5px;}
+.pl-10{padding-left: 10px;}
+.pl-15{padding-left: 15px;}
+.pl-20{padding-left: 20px;}
+.pl-25{padding-left: 25px;}
+.pl-30{padding-left: 30px;}
+
+.pr-5{padding-right: 5px;}
+.pr-10{padding-right: 10px;}
+.pr-15{padding-right: 15px;}
+.pr-20{padding-right: 20px;}
+.pr-25{padding-right: 25px;}
+.pr-30{padding-right: 30px;}
+
+.pb-5{padding-bottom: 5px;}
+.pb-10{padding-bottom: 10px;}
+.pb-15{padding-bottom: 15px;}
+.pb-20{padding-bottom: 20px;}
+.pb-25{padding-bottom: 25px;}
+.pb-30{padding-bottom: 30px;}
+
+a{
+	text-decoration: none;
+	list-style-type: none;
+	color: inherit;
+}
+ul{
+	list-style-type: none;
+}
+li{
+	list-style-type: none;
+}
+
+h1{
+	font-size: 32px;
+    font-weight: 600;
+}
+h3{
+	font-size: 20px;
+	font-weight:600;
+}
+h1,h2,h3,h4,h5,h6{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.cross{
+	float: right;
+	font-style: normal;
+	font-size: 16px;
+	font-weight: 600;
+	color: #c6cbd1;
+	cursor: pointer;
+}
+.cross:hover{
+	    color: #444d56;
+}
+
+.inline-block{
+	display: inline-block;
+}
+.none{
+	display: none;
+}
+.left{
+	float: left;
+}
+.right{
+	float:right;
+}
+::placeholder{
+color: #afb4b9;
+
+}
+.down{
+	position: relative;
+	top: -2px;
+	opacity: 1 !important;
+	border-radius: none;
+}
+.block{
+	display: block;
+}
+.selected{
+	font-weight: 600 !important;
+    color: #24292e !important;
+    border-bottom-color: #e36209 !important;
+}
+}
