@@ -6,6 +6,11 @@ You can go on this link to view the page .[Link to the page](http://samplegithub
 
 ## Screenshot
 
-![Screenshot](https://www.dropbox.com/s/i6ksqvho4nk0ytz/githubsample.png?dl=0)
+![githubsample](https://user-images.githubusercontent.com/17093626/43093880-031bc63c-8ecf-11e8-8795-590a8781b1e5.png)
 
+## Features
+
+- Pure Css no library is used.
+- Live working of the searching feature except filters.
+- Fetch api is used to fectch the data from the github's api.
 
